@@ -1,0 +1,9 @@
+<div class="bg-danger">
+  <h2 class="text-white mb-3">Post Attivi</h2>
+  <div *ngFor="let post of activePosts">
+    <div class="text-center">
+      <h5 class="mb-3">{{ post.title }}</h5>
+      <p>{{ post.body }}</p>
+    </div>
+  </div>
+</div>

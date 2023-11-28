@@ -1,0 +1,27 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="./" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="active - posts"
+            routerLink="/active-posts"
+            >Post Attivi</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="inactive - posts"
+            routerLink="/inactive-posts"
+            >Post Inattivi</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
